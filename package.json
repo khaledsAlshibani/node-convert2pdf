@@ -1,0 +1,89 @@
+{
+  "name": "convert2pdf",
+  "version": "1.0.0",
+  "description": "Convert files to PDF and compress PDFs. Currently supports .pptx/.ppt to PDF and .pdf compression. CLI and Node.js API.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "convert2pdf": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc",
+    "prepublishOnly": "pnpm build",
+    "start": "node dist/cli.js",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "verify": "pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "release:dry-run": "node scripts/check-release-node.mjs && semantic-release --dry-run",
+    "release:check": "pnpm verify && pnpm release:dry-run"
+  },
+  "keywords": [
+    "pptx",
+    "pdf",
+    "convert",
+    "compress",
+    "powerpoint",
+    "ghostscript",
+    "libreoffice",
+    "cli",
+    "api",
+    "nodejs"
+  ],
+  "author": "Khaled Alshibani (https://khaled.technway.biz/)",
+  "homepage": "https://khaled.technway.biz/",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaledsAlshibani/node-convert2pdf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khaledsAlshibani/node-convert2pdf/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@10.33.2",
+  "dependencies": {
+    "@inquirer/prompts": "^8.5.2",
+    "boxen": "^8.0.1",
+    "chalk": "^5.6.2",
+    "commander": "^15.0.0",
+    "compress-pdf": "^0.6.3",
+    "msoffice2pdf": "^1.1.0",
+    "ora": "^9.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.8",
+    "@semantic-release/npm": "^13.1.5",
+    "@types/node": "^26.0.0",
+    "eslint": "^10.5.0",
+    "globals": "^17.6.0",
+    "semantic-release": "^25.0.5",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.1",
+    "vitest": "^3.2.4"
+  }
+}

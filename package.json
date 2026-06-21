@@ -1,6 +1,6 @@
 {
   "name": "convert2pdf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert files to PDF and compress PDFs. Currently supports .pptx/.ppt to PDF and .pdf compression. CLI and Node.js API.",
   "type": "module",
   "main": "./dist/index.js",

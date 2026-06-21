@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/khaledsAlshibani/node-convert2pdf/compare/v1.0.0...v1.0.1) (2026-06-21)
+
+
+### Bug Fixes
+
+* correct npm bin field for publish ([240d895](https://github.com/khaledsAlshibani/node-convert2pdf/commit/240d8950c0a55cbbd27ebb43cefbd33a0fe5a77e))
+
 # 1.0.0 (2026-06-21)
 
 

@@ -44,8 +44,7 @@ jobs:
         run: pnpm build
 
       - name: Release
+        # npm Trusted Publisher (OIDC) — no NPM_TOKEN required
         run: pnpm exec semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

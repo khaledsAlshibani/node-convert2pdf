@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/khaledsAlshibani/node-convert2pdf/compare/v1.0.1...v1.0.2) (2026-06-21)
+
+
+### Bug Fixes
+
+* allow local npm publish without provenance ([e3258ac](https://github.com/khaledsAlshibani/node-convert2pdf/commit/e3258ac6e2df7bdb5dc584bdb2dc15a19b88ec9e))
+
 ## [1.0.1](https://github.com/khaledsAlshibani/node-convert2pdf/compare/v1.0.0...v1.0.1) (2026-06-21)
 
 

@@ -12,7 +12,7 @@
     }
   },
   "bin": {
-    "convert2pdf": "./dist/cli.js"
+    "convert2pdf": "dist/cli.js"
   },
   "files": [
     "dist",
